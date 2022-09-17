@@ -12,6 +12,7 @@
     "start": "cd app && tsc && node dist/app.js",
     "test": "jest --coverage"
   },
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/austin-starks/AlgoTrading-System.git"
