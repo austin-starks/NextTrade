@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "target": "es2019",
+    "moduleResolution": "node",
+    "sourceMap": false,
+    "outDir": "dist"
+  },
+  "include": ["src/**/*", "scripts"],
+  "exclude": ["node_modules"]
+}

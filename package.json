@@ -1,0 +1,30 @@
+{
+  "name": "live-trader",
+  "version": "1.0.0",
+  "description": "A system to algorithmically trade.",
+  "main": "server/app.js",
+  "scripts": {
+    "install-client-and-build": "cd client && npm install && npm run build",
+    "install-client": "cd client && npm install",
+    "install-server": "cd app && npm install",
+    "install-all": "npm run install-client && npm run install-server",
+    "heroku-postbuild": "npm run install-client-and-build && npm run install-server",
+    "start": "cd app && tsc && node dist/app.js",
+    "test": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/austin-starks/AlgoTrading-System.git"
+  },
+  "author": "Austin Starks",
+  "bugs": {
+    "url": "https://github.com/austin-starks/AlgoTrading-System/issues"
+  },
+  "homepage": "https://github.com/austin-starks/AlgoTrading-System#readme",
+  "dependencies": {
+    "concurrently": "^6.3.0"
+  },
+  "devDependencies": {
+    "prettier-plugin-organize-imports": "^2.3.4"
+  }
+}
