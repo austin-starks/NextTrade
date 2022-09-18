@@ -10,7 +10,7 @@ The system is divided into 3 main functionalities:
 - The server - this receives requests from the user and sends back the requested data or executes the user's action.
 - The app - executes the live-trading and paper-trading functionality in the application
 
-All systems are currently implemented using TypeScript. The client is located in the client folder and is implemented using React. The server and app are implemented using NodeJS are located in the app folder. While the server and app share the same codebase, they are deployed on different instances to isolate their unique functionality and ensure separation of concerns.
+All systems are currently implemented using TypeScript. The client is located in the client folder and is implemented using React. The server and app are implemented using NodeJS are located in the app folder. 
 
 ## Installation
 
