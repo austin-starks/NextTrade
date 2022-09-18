@@ -3,9 +3,13 @@
 A system to create, test, optimize, and deploy algorithmic trading strategies
 
 ## Features
-1. Create simple/complex trading strategies. 
-    - For example, buy SPY when QQQ stock is 1 SD below its 5-day mean price and your buying power is above $8,000.
-2. Create unlimited portfolios with different strategies
+1. Combine simple conditions to form compound conditions. Combine compound conditions and create trading strategies. 
+    - For example: 
+        - Condition A: QQQ stock is 1 SD below its 5-day mean price 
+        - Condition B: Buying power is above $8,000.
+        - Condition C: Condition A and condition B
+        - Strategy: If condition C, buy $3000 of SPY 
+2. Create unlimited portfolios with different combinations of strategies
 3. Backtest those strategies using historical data. 
     - Only stocks are currently supported, but cryptocurrency and options support is baked into the architecture
 3. Optimize the strategy's parameters using a genetic algorithm
