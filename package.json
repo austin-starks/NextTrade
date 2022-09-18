@@ -15,13 +15,13 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/austin-starks/AlgoTrading-System.git"
+    "url": "git+https://github.com/austin-starks/NextTrade.git"
   },
   "author": "Austin Starks",
   "bugs": {
-    "url": "https://github.com/austin-starks/AlgoTrading-System/issues"
+    "url": "https://github.com/austin-starks/NextTrade/issues"
   },
-  "homepage": "https://github.com/austin-starks/AlgoTrading-System#readme",
+  "homepage": "https://github.com/austin-starks/NextTrade#readme",
   "dependencies": {
     "concurrently": "^6.3.0"
   },
