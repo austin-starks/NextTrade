@@ -28,3 +28,6 @@ To turn on the client and server:
 1. Open two terminal windows.
 2. In one window, turn on the client: `cd client; npm start`
 3. In the other window, turn on the server: `cd app; npm start`
+
+## System Architecture and Design
+https://drive.google.com/file/d/1yj63cTSuwasXW4TfEjmUL5qMdZYKH2hb/view?usp=sharing
