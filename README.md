@@ -8,9 +8,12 @@ The system is divided into 3 main functionalities:
 
 - The client - this is the interface that users will interact with.
 - The server - this receives requests from the user and sends back the requested data or executes the user's action.
-- The app - executes the live-trading and paper-trading functionality in the application
+- The app - executes the live-trading, paper-trading, backtesting, and optimization functionality in the application
 
 All systems are currently implemented using TypeScript. The client is located in the client folder and is implemented using React. The server and app are implemented using NodeJS are located in the app folder. 
+
+## System Architecture and Design
+https://drive.google.com/drive/folders/1TgZNGPd7TBWi47dWh0TI2nZ_9WUhv_P_?usp=sharing
 
 ## Installation
 
@@ -28,6 +31,3 @@ To turn on the client and server:
 1. Open two terminal windows.
 2. In one window, turn on the client: `cd client; npm start`
 3. In the other window, turn on the server: `cd app; npm start`
-
-## System Architecture and Design
-https://drive.google.com/drive/folders/1TgZNGPd7TBWi47dWh0TI2nZ_9WUhv_P_?usp=sharing
