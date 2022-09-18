@@ -1,18 +1,14 @@
 # NextTrade
 
-A system to create algorithmic trading strategies
+A system to create, test, optimize, and deploy algorithmic trading strategies
 
-## Overview
-
-The system is divided into 3 main functionalities:
-
-- The client - this is the interface that users will interact with.
-- The server - this receives requests from the user and sends back the requested data or executes the user's action.
-- The app - executes the live-trading, paper-trading, backtesting, and optimization functionality in the application
-
-All systems are currently implemented using TypeScript. The client is located in the client folder and is implemented using React. The server and app are implemented using NodeJS are located in the app folder. 
+## Features
+1. Create simple/complex trading strategies. For example, buy SPY when QQQ stock is 1 SD below its 5-day mean price and your buying power is above $8,000.
+2. Backtest those strategies using historical OHLC data
+3. Optimize those the strategy's parameters using a genetic algorithm
 
 ## System Architecture and Design
+Some architectural artifacts can be found at this link:
 https://drive.google.com/drive/folders/1TgZNGPd7TBWi47dWh0TI2nZ_9WUhv_P_?usp=sharing
 
 ## Installation
