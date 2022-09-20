@@ -10,6 +10,9 @@ lerna-debug.log*
 .vscode
 settings.json
 
+# Jetbrains settings
+.idea
+
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
