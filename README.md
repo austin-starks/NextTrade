@@ -3,7 +3,7 @@
 A system to create, test, optimize, and deploy algorithmic trading strategies
 
 ## Features
-1. Combine simple conditions to form compound conditions. Combine compound conditions and create trading strategies. 
+1. Combine conditions to form compound conditions. Combine compound conditions and create trading strategies. 
     - For example: 
         - Condition A: QQQ stock is 1 SD below its 5-day mean price 
         - Condition B: Buying power is above $8,000.
@@ -30,21 +30,14 @@ https://drive.google.com/drive/folders/1TgZNGPd7TBWi47dWh0TI2nZ_9WUhv_P_?usp=sha
    * [Production vs Sandbox data details](https://documentation.tradier.com/brokerage-api/overview/market-data)
    * [Sandbox Account and Signup info](https://documentation.tradier.com/brokerage-api/overview/endpoints)
 
-### Overview
-
-#### Setup
+### Mac Setup
 1. Clone the repository.
-2. Intall [MongoDB community edition](https://docs.mongodb.com/manual/administration/install-community/) and enable it.
+2. Install [MongoDB community edition](https://docs.mongodb.com/manual/administration/install-community/) and enable it.
 3. Install the dependencies: `npm run install-all`
 4. Make sure all tests pass: `cd app && npm t && cd ..`
 5. Add your Tradier token to the `./app/env` file and rename the file to .env
 
-#### To run the client and server:
-1. In a terminal instance, turn on the client: `cd client; npm start`
-2. In another terminal instance, turn on the server: `cd app; npm start`
-3. Once started, load the app: [http://localhost:3000](http://localhost:3000)
-
-### Linux/WSL2 (tested on Ubuntu 20.04)
+### Linux/WSL2 setup (tested on Ubuntu 20.04)
 1. If needed, install Node.js. NVM Option:
    1. `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash`
    2. Exit and restart the terminal session.
@@ -75,11 +68,12 @@ https://drive.google.com/drive/folders/1TgZNGPd7TBWi47dWh0TI2nZ_9WUhv_P_?usp=sha
 
 ## Turning on the system
 
-### Manually Running
+### Manually managed
 
+#### Development environment
 1. Open two terminal windows.
-2. In one window, turn on the client: `cd ~/NextTrade/client && npm start`
-3. In the other window, turn on the server: `cd ~/NextTrade/app && npm start`
+2. In a terminal instance, turn on the client: `cd client; npm start`
+3. In another terminal instance, turn on the server: `cd app; npm start`
 4. Once started, load the app: [http://localhost:3000](http://localhost:3000)
 
 ### PM2 Managed
