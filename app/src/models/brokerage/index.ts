@@ -4,7 +4,7 @@ import AlpacaBrokerage from "./AlpacaBrokerage";
 import BacktestBrokerage from "./BacktestBrokerage";
 import TestBrokerage, {
   TestBrokerageWithMarketHistorySpy,
-} from "./TestBrokerage";
+} from "./testBrokerage";
 import TradierBrokerage from "./TradierBrokerage";
 
 export {
