@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 import { print } from "../utils";
 mongoose.set("useFindAndModify", false);
 const cloudDB = process.env.CLOUD_DB;
-const localDB = "mongodb://127.0.0.1:27017/live-trader";
+const localDB = "mongodb://127.0.0.1:27017/nexttrade";
 const connectionMap = new Map();
 connectionMap.set("cloudDB", cloudDB);
 connectionMap.set("cloud", cloudDB);
