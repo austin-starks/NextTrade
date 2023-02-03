@@ -1,4 +1,4 @@
-# NextTrade
+# NextTrade - Plan your next trade
 
 A system to create, test, optimize, and deploy algorithmic trading strategies
 
