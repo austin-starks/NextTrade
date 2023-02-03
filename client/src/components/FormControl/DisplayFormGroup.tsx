@@ -80,7 +80,7 @@ const BaseObjectFormGroups = (props: BaseObjectFormGroupProps) => {
                     label={field.label}
                     inputFormat="MM/dd/yyyy"
                     value={_.isNil(field.value) ? "" : field.value}
-                    onChange={(newValue) => onChange(newValue)}
+                    onChange={(newValue: Date) => onChange(newValue)}
                     renderInput={(params: any) => (
                       <TextField
                         {...params}

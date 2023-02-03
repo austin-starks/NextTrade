@@ -73,7 +73,7 @@ const DateField = (props: DateFieldProps) => {
           label="Start Date"
           inputFormat="MM/dd/yyyy"
           value={formik.values.startDate}
-          onChange={(newValue) => {
+          onChange={(newValue: Date) => {
             formik.setFieldValue("startDate", newValue, true);
           }}
           renderInput={(params: any) => (
@@ -98,7 +98,7 @@ const DateField = (props: DateFieldProps) => {
           label="End Date"
           inputFormat="MM/dd/yyyy"
           value={formik.values.endDate}
-          onChange={(newValue) => {
+          onChange={(newValue: Date) => {
             formik.setFieldValue("endDate", newValue, true);
           }}
           renderInput={(params: any) => (
