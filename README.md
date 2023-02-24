@@ -2,6 +2,8 @@
 
 A system to create, test, optimize, and deploy algorithmic trading strategies
 
+For a faster, more configurable next-generation platform, check out NexusTrade: https://nexustrade.onrender.com/
+
 ## Features
 1. Combine conditions to form compound conditions. Combine compound conditions and create trading strategies. 
     - For example: 
