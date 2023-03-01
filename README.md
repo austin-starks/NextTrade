@@ -1,6 +1,8 @@
 # NextTrade - Plan your next trade
 
-A system to create, test, optimize, and deploy algorithmic trading strategies
+A system to create, test, optimize, and deploy algorithmic trading strategies. 
+
+[Read More about it here](https://medium.com/@austin-starks/i-created-an-open-source-automated-trading-platform-f9d94575ceba)
 
 For a faster, more configurable next-generation platform, check out NexusTrade: https://nexustrade.onrender.com/
 
