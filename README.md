@@ -4,7 +4,7 @@ A system to create, test, optimize, and deploy algorithmic trading strategies.
 
 [Read More about it here](https://medium.com/@austin-starks/i-created-an-open-source-automated-trading-platform-f9d94575ceba)
 
-For a faster, more configurable next-generation platform, [check out NexusTrade](https://nexustrade.onrender.com/)
+For a fully functional platform, [check out NexusTrade](https://nexustrade.onrender.com/). NexusTrade is a AI-Powered automated trading and investment platform that allows users to create, test, optimize, and deploy algorithmic trading strategies. It's faster and more configurable than NextTrade and easier to use. 
 
 
 ## Features
