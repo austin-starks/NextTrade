@@ -1,41 +1,44 @@
 # NextTrade - Plan your next trade
 
-A system to create, test, optimize, and deploy algorithmic trading strategies. 
+A system to create, test, optimize, and deploy algorithmic trading strategies.
 
 [Read More about it here](https://medium.com/@austin-starks/i-created-an-open-source-automated-trading-platform-f9d94575ceba)
 
-For a fully functional platform, [check out NexusTrade](https://nexustrade.onrender.com/). NexusTrade is a AI-Powered automated trading and investment platform that allows users to create, test, optimize, and deploy algorithmic trading strategies. It's faster and more configurable than NextTrade and easier to use. 
-
+For a fully functional platform, [check out NexusTrade](https://nexustrade.io/). NexusTrade is a AI-Powered automated trading and investment platform that allows users to create, test, optimize, and deploy algorithmic trading strategies. It's faster and more configurable than NextTrade and easier to use.
 
 ## Features
-1. Combine conditions to form compound conditions. Combine compound conditions and create trading strategies. 
-    - For example: 
-        - Condition A: QQQ stock is 1 SD below its 5-day mean price 
-        - Condition B: Buying power is above $8,000.
-        - Condition C: Condition A and condition B
-        - Strategy: If condition C, buy $3000 of SPY 
+
+1. Combine conditions to form compound conditions. Combine compound conditions and create trading strategies.
+   - For example:
+     - Condition A: QQQ stock is 1 SD below its 5-day mean price
+     - Condition B: Buying power is above $8,000.
+     - Condition C: Condition A and condition B
+     - Strategy: If condition C, buy $3000 of SPY
 2. Create unlimited portfolios with different combinations of strategies
-3. Backtest those strategies using historical data. 
-    - Only stocks are currently supported, but cryptocurrency and options support is baked into the architecture
-3. Optimize the strategy's parameters using a genetic algorithm
-    - Choose hyperparameters like mutation rate, training period, validation period, and population size
-    - Choose to optimize percent gain, sortino ratio, sharpe ratio, or max drawdown
-4. Deploy the strategies live and see how it performs in real-time
+3. Backtest those strategies using historical data.
+   - Only stocks are currently supported, but cryptocurrency and options support is baked into the architecture
+4. Optimize the strategy's parameters using a genetic algorithm
+   - Choose hyperparameters like mutation rate, training period, validation period, and population size
+   - Choose to optimize percent gain, sortino ratio, sharpe ratio, or max drawdown
+5. Deploy the strategies live and see how it performs in real-time
 
 ## System Architecture and Design
+
 Some architectural artifacts can be found at this link:
 https://drive.google.com/drive/folders/1TgZNGPd7TBWi47dWh0TI2nZ_9WUhv_P_?usp=sharing
 
 ## Local Installation
 
 ### Prerequisites
+
 1. Mac, Linux or WSL2 preferred
-   * [How to set up Linux on Windows with WSL 2](https://s1gr1d.medium.com/how-to-set-up-linux-on-windows-with-wsl-2-debe2a64d20d)
+   - [How to set up Linux on Windows with WSL 2](https://s1gr1d.medium.com/how-to-set-up-linux-on-windows-with-wsl-2-debe2a64d20d)
 2. Tradier Account (with at least a free sandbox token; additional brokers TBD)
-   * [Production vs Sandbox data details](https://documentation.tradier.com/brokerage-api/overview/market-data)
-   * [Sandbox Account and Signup info](https://documentation.tradier.com/brokerage-api/overview/endpoints)
+   - [Production vs Sandbox data details](https://documentation.tradier.com/brokerage-api/overview/market-data)
+   - [Sandbox Account and Signup info](https://documentation.tradier.com/brokerage-api/overview/endpoints)
 
 ### Mac Setup
+
 1. Clone the repository.
 2. Install [MongoDB community edition](https://docs.mongodb.com/manual/administration/install-community/) and enable it.
 3. Install the dependencies: `npm run install-all`
@@ -43,11 +46,12 @@ https://drive.google.com/drive/folders/1TgZNGPd7TBWi47dWh0TI2nZ_9WUhv_P_?usp=sha
 5. Add your Tradier token to the `./app/env` file and rename the file to .env
 
 ### Linux/WSL2 setup (tested on Ubuntu 20.04)
+
 1. If needed, install Node.js. NVM Option:
    1. `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash`
    2. Exit and restart the terminal session.
    3. `nvm install --lts`
-2. Install [MongoDB community edition](https://docs.mongodb.com/manual/administration/install-community/) and enable.  For Ubuntu 20.04:
+2. Install [MongoDB community edition](https://docs.mongodb.com/manual/administration/install-community/) and enable. For Ubuntu 20.04:
    1. `curl -fsSL https://www.mongodb.org/static/pgp/server-4.4.asc | sudo apt-key add -`
    2. `echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/4.4 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.4.list`
    3. `sudo apt update`
@@ -55,19 +59,19 @@ https://drive.google.com/drive/folders/1TgZNGPd7TBWi47dWh0TI2nZ_9WUhv_P_?usp=sha
    5. Linux/Ubuntu specific:
       1. `sudo systemctl status mongod` (verify it's running)
       2. `sudo systemctl enable mongod` (to auto-start at boot)
-   5. WSL2 specific:
+   6. WSL2 specific:
       1. `sudo mkdir -p /data/db`
-      2. ``sudo chown -R `id -un` /data/db``
+      2. `` sudo chown -R `id -un` /data/db ``
       3. `wget -O mongod.sh https://raw.githubusercontent.com/mongodb/mongo/master/debian/init.d`
       4. `sudo mv ./mongod.sh /etc/init.d/mongod`
       5. `sudo chmod +x /etc/init.d/mongod`
       6. `sudo service mongod start`
-         * [Auto-start options for WSL2 on Win11](https://learn.microsoft.com/en-us/windows/wsl/wsl-config#boot-settings)
+         - [Auto-start options for WSL2 on Win11](https://learn.microsoft.com/en-us/windows/wsl/wsl-config#boot-settings)
       7. `sudo service mongod status` (verify it's running)
-   6.  `mongo --eval 'db.runCommand({ connectionStatus: 1 })'` (verify it's working)
+   7. `mongo --eval 'db.runCommand({ connectionStatus: 1 })'` (verify it's working)
 3. Clone the NextTrade repository: `cd ~ && git clone https://github.com/austin-starks/NextTrade && cd NextTrade`
 4. Install the dependencies: `npm run install-all`
-5. Copy the sample config file to .env `cp ./app/env ./app/.env` 
+5. Copy the sample config file to .env `cp ./app/env ./app/.env`
 6. Add your Tradier token to the `./app/.env` file
 7. Make sure all tests pass: `cd app && npm t; cd ..`
 
@@ -76,6 +80,7 @@ https://drive.google.com/drive/folders/1TgZNGPd7TBWi47dWh0TI2nZ_9WUhv_P_?usp=sha
 ### Manually managed
 
 #### Development environment
+
 1. Open two terminal windows.
 2. In a terminal instance, turn on the client: `cd client; npm start`
 3. In another terminal instance, turn on the server: `cd app; npm start`
@@ -91,6 +96,7 @@ https://drive.google.com/drive/folders/1TgZNGPd7TBWi47dWh0TI2nZ_9WUhv_P_?usp=sha
 4. `pm2 save`
 
 #### Running (assuming no other PM2 apps)
-1. To start the client+app: `pm2 start all` 
-2. To stop the client+app: `pm2 stop all` 
+
+1. To start the client+app: `pm2 start all`
+2. To stop the client+app: `pm2 stop all`
 3. Other Useful commands: `pm2 status`, `pm2 logs`, `pm2 monit` See [PM2 Quickstart](https://pm2.keymetrics.io/docs/usage/quick-start/) for more.
