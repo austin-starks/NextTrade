@@ -6,14 +6,14 @@ A system to create, test, optimize, and deploy algorithmic trading strategies.
 
 For a better, faster, cloud-based platform, [check out NexusTrade](https://nexustrade.io/). 
 
-NexusTrade is a AI-Powered platform that streamlines the configuration of trading strategies. users to create, test, optimize. It's faster, more configurable, and more feature rich than NextTrade. It features a powerful AI Chat Assistant tool.
+NexusTrade is a AI-Powered platform that streamlines the configuration of trading strategies. It's faster, more configurable, and more feature-rich than NextTrade. It features a powerful AI Chat Assistant tool as an entry point to many of its features.
 
 Some improvements include:
- - Enhanced configurabluty: Can essentially express any idea you can imagine
- - AI-Powered Research Tools: Perform in-depth company analysis 
+ - Enhanced configurabluty: Can essentially express any trading idea you can imagine
+ - AI-Powered Research Tools: Perform in-depth company analysis and compare companies between each other
  - Powerful stock screener: Use natural language to find stocks in over 130 industries and 30+ fundamental indicators
 
-## Features
+## NextTrade Features
 
 1. Combine conditions to form compound conditions. Combine compound conditions and create trading strategies.
    - For example:
