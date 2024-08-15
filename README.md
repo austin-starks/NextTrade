@@ -3,7 +3,8 @@
 A system to create, test, optimize, and deploy algorithmic trading strategies.
 
 * [Read More about NextTrade](https://medium.com/@austin-starks/i-created-an-open-source-automated-trading-platform-f9d94575ceba)
-* [Comparing NextTrade to NexusTrade](https://medium.com/p/cfa9bab0ee85)
+* [Comparing NextTrade to NexusTrade Part 1](https://medium.com/p/317b6e068254)
+* [Comparing NextTrade to NexusTrade Part 2](https://medium.com/p/cfa9bab0ee85)
 
 For a better, faster, cloud-based platform, [check out NexusTrade](https://nexustrade.io/). 
 
