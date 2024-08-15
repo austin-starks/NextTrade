@@ -18,18 +18,22 @@ Some improvements include:
 ## NextTrade Features
 
 1. Combine conditions to form compound conditions. Combine compound conditions and create trading strategies.
+   - ![Compound Condition — returns true if all conditions are true](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*sI_cc4c6bSYrXwPK5l81PA.jpeg)
    - For example:
      - Condition A: QQQ stock is 1 SD below its 5-day mean price
      - Condition B: Buying power is above $8,000.
      - Condition C: Condition A and condition B
      - Strategy: If condition C, buy $3000 of SPY
 2. Create unlimited portfolios with different combinations of strategies
-3. Backtest those strategies using historical data.
+   - ![Create unlimited portfolios](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*6P6LA2dWeNEt-arU_y0E6A.png)
+4. Backtest those strategies using historical data.
+   - ![Backtest your portfolio](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*1tO6BOwr2dKiKdMdvDnM2g.jpeg)
    - Only stocks are currently supported, but cryptocurrency and options support is baked into the architecture
-4. Optimize the strategy's parameters using a genetic algorithm
+6. Optimize the strategy's parameters using a genetic algorithm
+   - ![Optimize your strategy with Genetic Algorithms](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*GOnxADcrSF_VIJylmemnaA.png)
    - Choose hyperparameters like mutation rate, training period, validation period, and population size
    - Choose to optimize percent gain, sortino ratio, sharpe ratio, or max drawdown
-5. Deploy the strategies live and see how it performs in real-time
+8. Deploy the strategies live and see how it performs in real-time
 
 ## System Architecture and Design
 
