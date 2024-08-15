@@ -34,6 +34,7 @@ Some improvements include:
    - Choose hyperparameters like mutation rate, training period, validation period, and population size
    - Choose to optimize percent gain, sortino ratio, sharpe ratio, or max drawdown
 8. Deploy the strategies live and see how it performs in real-time
+   - ![Deploy your strategies live with the click of a button](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*-MmD0EBTkAsYiED9hwDprA.png)
 
 ## System Architecture and Design
 
