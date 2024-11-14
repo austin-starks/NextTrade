@@ -9,7 +9,7 @@ NexusTrade is a AI-Powered platform that streamlines the configuration of tradin
 Some improvements include:
  - Enhanced configurability: Can essentially express any trading idea you can imagine
  - AI-Powered Research Tools: Perform in-depth company analysis and compare companies between each other
- - Powerful stock screener: Use natural language to find stocks in over 130 industries and 30+ fundamental indicators
+ - Powerful stock screener: Use natural language to find stocks in over 130 industries and 30+ indicators
 
 * [Read More about NextTrade](https://medium.com/@austin-starks/i-created-an-open-source-automated-trading-platform-f9d94575ceba)
 * [Comparing NextTrade to NexusTrade Part 1](https://medium.com/p/317b6e068254)
